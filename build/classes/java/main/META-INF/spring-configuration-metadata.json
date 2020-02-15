@@ -3,7 +3,7 @@
     {
       "name": "spring.datasource.hikari",
       "type": "com.zaxxer.hikari.HikariConfig",
-      "sourceType": "teamcoll.config.DatabaseConfiguration",
+      "sourceType": "com.teamcoll.config.DatabaseConfiguration",
       "sourceMethod": "hikariConfig()"
     }
   ],

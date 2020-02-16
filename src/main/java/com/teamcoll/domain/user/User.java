@@ -22,7 +22,7 @@ public class User {
     @Column(nullable = false)
     private String email;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(nullable = false)
     private String pwd;
 
     //private Long tid;

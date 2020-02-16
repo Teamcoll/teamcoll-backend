@@ -14,6 +14,7 @@ public class Team {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long tid;
 
+
     @Column( columnDefinition = "DATE")
     private Date regdate;
 

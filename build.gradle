@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group ='com.teamcoll'
+group = 'org.devs'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
@@ -24,26 +24,18 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compileOnly 'org.projectlombok:lombok:1.18.12'
-	annotationProcessor 'org.projectlombok:lombok:1.18.12'
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	runtimeOnly('com.h2database:h2')
-
-	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
-
-	compile group: 'com.google.firebase', name: 'firebase-server-sdk', version: '3.0.1'
-
-	testCompileOnly 'org.projectlombok:lombok:1.18.12'
-	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile group: 'org.assertj', name: 'assertj-core', version: '3.11.1'
+	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('com.h2database:h2')
+	compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+	testCompileOnly 'org.projectlombok:lombok:1.18.12'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	implementation 'junit:junit:4.12'
-
+	testCompile group: 'org.assertj', name: 'assertj-core', version: '3.11.1'
 }
 
 test {
